@@ -11,6 +11,7 @@
   --secondary-font-color: hsl(228, 12%, 48%);
   --price-font-color: hsl(158, 36%, 37%);
   --paragraph-font-size: 14px;
+  --button-icon-color: hsl(0, 0%, 100%);
 }
 
 body {
@@ -23,18 +24,20 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 800px;
+    width: 670px;
     border: none;
     background-color: var(--card-bgColor);
     border-radius: 15px;
-    margin: 0;
+    margin: 0 auto;
+    margin-top: 90px;
     padding: 0;
   }
 }
 
 .img-card {
   @media screen and (min-width: 1440px) {
-    width: 400px;
+    width: 335px;
+    margin: 0;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     background-image: url(./images/image-product-desktop.jpg);
@@ -47,7 +50,7 @@ body {
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
-    width: 270px;
+    width: 260px;
     margin: 0 auto;
   }
 }
@@ -56,6 +59,9 @@ body {
   @media screen and (min-width: 1440px) {
     color: var(--secondary-font-color);
     font-size: var(--paragraph-font-size);
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
   }
 }
 
@@ -63,6 +69,10 @@ body {
   @media screen and (min-width: 1440px) {
     font-family: var(--second-main-font);
     font-size: 36px;
+    margin: 25px 0 25px 0;
+    font-weight: var(--font-weight-bold);
+    width: 240px;
+    line-height: 1;
   }
 }
 
@@ -70,6 +80,8 @@ body {
   @media screen and (min-width: 1440px) {
     color: var(--secondary-font-color);
     font-weight: var(--font-weight-lighter);
+    margin-top: 0;
+    line-height: 1.5;
   }
 }
 
@@ -102,11 +114,22 @@ body {
     background-color: var(--button-bgColor);
     color: var(--button-font-color);
     fill: var(--button-font-color);
-    width: 290px;
-    height: 40px;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--main-font);
+    width: 260px;
+    height: 50px;
     border: none;
     border-radius: 8px;
+    font-size: 15px;
     cursor: pointer;
+  }
+}
+
+.product-button-icon {
+  @media screen and (min-width: 1440px) {
+    fill: var(--button-icon-color);
+    padding: 0;
+    padding-right: 15px;
   }
 }
 
