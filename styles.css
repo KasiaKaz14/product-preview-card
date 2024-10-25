@@ -1,0 +1,119 @@
+:root {
+  --background-color: hsl(30, 38%, 92%);
+  --main-font: "Montserrat", sans-serif;
+  --second-main-font: "Fraunces", sans-serif;
+  --font-weight-lighter: 500;
+  --font-weight-bold: 700;
+  --card-bgColor: hsl(0, 0%, 100%);
+  --button-bgColor: hsl(158, 36%, 37%);
+  --button-font-color: hsl(0, 0%, 100%);
+  --main-font-color: hsl(212, 21%, 14%);
+  --secondary-font-color: hsl(228, 12%, 48%);
+  --price-font-color: hsl(158, 36%, 37%);
+  --paragraph-font-size: 14px;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+}
+
+.main-card-section {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    border: none;
+    background-color: var(--card-bgColor);
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.img-card {
+  @media screen and (min-width: 1440px) {
+    width: 400px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.info-card-section {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+
+.product-card-name {
+  @media screen and (min-width: 1440px) {
+    color: var(--secondary-font-color);
+    font-size: var(--paragraph-font-size);
+  }
+}
+
+.product-card-title {
+  @media screen and (min-width: 1440px) {
+    font-family: var(--second-main-font);
+    font-size: 36px;
+  }
+}
+
+.product-card-description {
+  @media screen and (min-width: 1440px) {
+    color: var(--secondary-font-color);
+    font-weight: var(--font-weight-lighter);
+  }
+}
+
+.product-prices {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.product-card-price {
+  @media screen and (min-width: 1440px) {
+    color: var(--price-font-color);
+    font-family: var(--second-main-font);
+    font-size: 32px;
+  }
+}
+
+.product-old-price {
+  @media screen and (min-width: 1440px) {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    padding-top: 22px;
+  }
+}
+
+.product-button {
+  @media screen and (min-width: 1440px) {
+    background-color: var(--button-bgColor);
+    color: var(--button-font-color);
+    fill: var(--button-font-color);
+    width: 290px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
