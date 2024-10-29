@@ -21,17 +21,30 @@
   <body>
     <section class="main-card-section">
       <section>
-        <img
+        <!-- <img
           class="img-card img-mobile"
           src="./images/image-product-mobile.jpg"
           alt="Image Product Mobile"
         />
-        <!-- Obraz desktopowy, początkowo ukryty -->
+       
         <img
           class="img-card img-desktop"
           src="./images/image-product-desktop.jpg"
           alt="Image Product Desktop"
         />
+        -->
+        <picture>
+          <source
+            class="img-card"
+            media="(min-width:768px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img
+            class="img-card"
+            src="./images/image-product-mobile.jpg"
+            alt=" Product Image Mobile"
+          />
+        </picture>
       </section>
       <section class="info-card-section">
         <p class="product-card-name">P E R F U M E</p>
